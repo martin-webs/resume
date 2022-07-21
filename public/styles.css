@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Courgette&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+
+  src: url('./fonts/Inter-Regular.woff') format('woff');
+}
 
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
@@ -630,6 +636,10 @@ video {
   gap: 1rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -689,12 +699,20 @@ video {
   padding-left: 0.5rem;
 }
 
-.font-custom1{
-  font-family: Source Sans Pro, sans;
+.font-custom3{
+  font-family: Inter, sans;
+}
+
+.font-custom4{
+  font-family: Secular One, sans-serif;
 }
 
 .font-custom2{
   font-family: Courgette, sans;
+}
+
+.font-custom1{
+  font-family: Source Sans Pro, sans;
 }
 
 .text-lg{
@@ -725,8 +743,16 @@ video {
   font-weight: 700;
 }
 
+.font-\[100\]{
+  font-weight: 100;
+}
+
 .uppercase{
   text-transform: uppercase;
+}
+
+.tracking-\[0\.2rem\]{
+  letter-spacing: 0.2rem;
 }
 
 .tracking-tight{
@@ -794,6 +820,31 @@ video {
   .md\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-amber-100{
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-amber-50{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-blue-100{
+    --tw-bg-opacity: 1;
+    background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-orange-100{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 237 213 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-\[lightyellow\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 224 / var(--tw-bg-opacity));
   }
 
   .md\:py-16{

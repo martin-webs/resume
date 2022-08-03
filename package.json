@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "tailwindcss -i src/styles.css -o public/styles.css --watch"  },
-    "serve": "nodemon",
+    "start": "live-server public", 
+    "dev": "tailwindcss -i src/styles.css -o public/styles.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

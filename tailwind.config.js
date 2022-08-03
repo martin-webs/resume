@@ -1,8 +1,12 @@
 module.exports = {
+  plugins: {
+    'postcss-import': {},
+    'tailwindcss': {},
+    'autoprefixer': {},
+  },
   mode: 'jit',
   content: [
-    './public/**/*.{html,js}',
-    './src/**/*.{html,js}',
+    './public/index.html'
   ],
   theme: {
     extend: {
@@ -19,3 +23,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+

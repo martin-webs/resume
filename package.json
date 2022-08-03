@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server public", 
-    "dev": "tailwindcss -i src/styles.css -o public/styles.css --watch"
+    "start": "live-server public",
+    "dev": "tailwindcss -i src/styles.css -o public/styles.css --watch",
+    "build": "npx tailwindcss -i public/styles.css -o dist/dist.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "postcss-import": "^14.1.0",
     "tailwindcss": "^3.1.6"
   }
 }

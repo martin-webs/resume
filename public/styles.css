@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Courgette&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Courgette&family=Source+Sans+Pro:wght@100;300;400;600;700&display=swap');
 
 @font-face {
   font-family: 'Inter', sans-serif;
@@ -566,45 +566,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -621,12 +582,16 @@ video {
   margin-top: 1rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
 
-.mr-1{
-  margin-right: 0.25rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .block{
@@ -655,18 +620,6 @@ video {
   width: 8rem;
 }
 
-.w-1{
-  width: 0.25rem;
-}
-
-.w-4{
-  width: 1rem;
-}
-
-.w-5{
-  width: 1.25rem;
-}
-
 .w-6{
   width: 1.5rem;
 }
@@ -693,6 +646,10 @@ video {
 
 .justify-end{
   justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -733,31 +690,6 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 63 18 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-gray-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.bg-blue-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
-.bg-blue-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#1e1e1e\]{
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
@@ -765,10 +697,6 @@ video {
 
 .p-3{
   padding: 0.75rem;
-}
-
-.p-8{
-  padding: 2rem;
 }
 
 .py-8{
@@ -798,6 +726,10 @@ video {
 
 .pl-2{
   padding-left: 0.5rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-custom3{
@@ -836,13 +768,20 @@ video {
   line-height: 1.25rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold{
   font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.leading-\[\]{
+  line-height: ;
+}
+
+.leading-\[1\.5\]{
+  line-height: 1.5;
 }
 
 .tracking-\[0\.2rem\]{
@@ -851,6 +790,10 @@ video {
 
 .tracking-tight{
   letter-spacing: -0.025em;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 
 .text-white{
@@ -895,8 +838,20 @@ video {
     flex-direction: column;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
   .md\:items-center{
     align-items: center;
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:justify-evenly{
@@ -915,14 +870,14 @@ video {
     gap: 3rem;
   }
 
+  .md\:bg-\[\#1a1a18\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(26 26 24 / var(--tw-bg-opacity));
+  }
+
   .md\:bg-\[lightyellow\]{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 224 / var(--tw-bg-opacity));
-  }
-
-  .md\:bg-gray-900{
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
   .md\:bg-\[\#393930\]{
@@ -938,6 +893,11 @@ video {
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:text-3xl{
@@ -962,6 +922,38 @@ video {
   .md\:text-gray-900{
     --tw-text-opacity: 1;
     color: rgb(17 24 39 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-\[1\.5rem\]{
+    font-size: 1.5rem;
+  }
+
+  .lg\:text-\[1\.2rem\]{
+    font-size: 1.2rem;
+  }
+
+  .lg\:text-\[1\.3rem\]{
+    font-size: 1.3rem;
+  }
+
+  .lg\:text-\[1rem\]{
+    font-size: 1rem;
+  }
+
+  .lg\:text-\[1\.1rem\]{
+    font-size: 1.1rem;
   }
 }
 

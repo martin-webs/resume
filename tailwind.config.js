@@ -6,7 +6,8 @@ module.exports = {
   },
   mode: 'jit',
   content: [
-    './public/index.html'
+    './public/index.html',
+    './src/*.js'
   ],
   theme: {
     extend: {
@@ -18,6 +19,9 @@ module.exports = {
       },
       boxShadow: {
         'shadow1': '0 0 8px 0px white'
+      },
+      animation: {
+        'fadeIn': '',
       }
     },
   },

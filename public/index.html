@@ -21,19 +21,19 @@
 					<span class="hidden md:inline-block">PEREZ</span>
 				</h1>
 				<ul class="w-32 flex justify-end gap-4 text-2xl  md:justify-evenly md:w-fit md:gap-12">
-					<li>
+					<li class="hover:-translate-y-1 duration-500">
 						<a href="mailto:martin.emails@pm.me" class="flex gap-4">
 							<i class="fa-solid fa-envelope"></i>
 							<span class="hidden md:text-lg xl:inline-block">martin.emails@pm.me</span>
 						</a>
 					</li>
-					<li>
+					<li class="hover:-translate-y-1 duration-500">
 						<a href="https://github.com/martin-webs" class="flex gap-4">
 							<i class="fa-brands fa-github"></i>
 							<span class="hidden md:text-lg xl:inline-block">Github</span>
 						</a>
 					</li>
-					<li>
+					<li class="hover:-translate-y-1 duration-500">
 						<a href="https://linkedin.com/in/martin-web7" class="flex gap-4">
 							<i class="fa-brands fa-linkedin"></i>
 							<span class="hidden md:text-lg xl:inline-block">LinkedIn</span>
@@ -49,35 +49,35 @@
 						SKILLSET
 					</h2>
 					<ul class="mt-4 flex flex-wrap gap-4 w-fit lg:text-[1rem]">
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2 ">Html</span>
 							<i class="fa-brands fa-html5 hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">Css</span>
 							<i class="fa-brands fa-css3-alt hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">JavaScript</span>
 							<i class="fab fa-js hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">React</span>
 							<i class="fa-brands fa-react hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">NodeJS</span>
 							<i class="fa-brands fa-node-js hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">Figma</span>
 							<i class="fa-brands fa-figma hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">Affinity</span>
 							<i class="fa-solid fa-circle-nodes hidden md:inline"></i>
 						</li>
-						<li>
+						<li class="hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">TailwindCss</span>
 							<svg class="w-6 hidden md:inline mt-[-4px]" width="100%" height="100%" viewBox="0 0 228 140" version="1.1"
 								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
@@ -180,15 +180,6 @@
 								graphic elements.</span>
 						</li>
 						<li>
-							<a href="https://inspiring-bhabha-f1f655.netlify.app/">
-								<span class="mr-1 font-bold font-custom1 inline">Brad's Website</span>
-								<i class="fa-solid fa-up-right-from-square"></i>
-							</a>
-							<span class="hidden md:block">Based on Brad Traversy's design, made with plain HTML, CSS and JS. First
-								project using SASS, add JS animation effects like changing the background,
-								fonts and colors with addEventListeners, sliding menus (still in progress).</span>
-						</li>
-						<li>
 							<a href="https://remindly.onrender.com/">
 								<span class="mr-1 font-bold font-custom1 inline">Remindly</span>
 								<i class="fa-solid fa-up-right-from-square"></i>
@@ -198,15 +189,22 @@
 								"jimmy123@gmail.com" and "jimmy123!" to test it), create, edit and delete reminders; database
 								implementation is coming up.</span>
 						</li>
+						<li>
+							<a href="https://resume-dsign-7.vercel.app/">
+								<span class="mr-1 font-bold font-custom1 inline">Resume</span>
+								<i class="fa-solid fa-up-right-from-square"></i>
+							</a>
+							<span class="hidden md:block">A small project emulating a pdf displaying a classic resume, made with TailwindCss and a sprinkle of JS and CSS; the main bulk is in the HTML file.</span>
+						</li>
 					</ul>
 				</div>
 			</section>
 		</main>
 	</div>
-	<footer class="relative bg-[#1e1e1e] p-4 font-custom1 font-thin text-xs md:mx-24 xl:mx-52 lg:pb-8">
+	<footer class="relative bg-[#1e1e1e] p-4 font-custom1 font-thin text-xs md:mx-24 md:bg-[#44433d] xl:mx-52 lg:pb-8">
 		<div class="flex justify-between px-2 grayscale hover:grayscale-0">
-			<svg id="brush-logo" class="w-4 lg:w-6 cursor-pointer hover:scale-150 duration-700" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
-				viewBox="0 0 32 32">
+			<svg id="brush-logo" class="w-4 lg:w-6 cursor-pointer hover:scale-150 duration-700"
+				xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 32 32">
 				<path fill="#f5bdaf"
 					d="M5.777,30.377l-2.83-2.83a2,2,0,0,1,0-2.83l18.39-18.39,5.97-2.29,3.22-1.24-1.24,3.23L27,11.987,8.607,30.377A2,2,0,0,1,5.777,30.377Z" />
 				<polygon fill="#57565e"
@@ -230,7 +228,8 @@
 			</svg>
 			<div id="thankyou" class="text-center self-end hover:scale-150 duration-700">Thank you for your visit </div>
 			<a href="https://github.com/martin-webs/resume">
-				<svg id="brush-logo" class="w-4 lg:w-8 text-blue-500 hover:scale-150 duration-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+				<svg id="brush-logo" class="w-4 lg:w-8 text-blue-500 hover:scale-150 duration-700"
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 					<path fill="#f8a839"
 						d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"
 						class="color5c6bc0 svgShape" />

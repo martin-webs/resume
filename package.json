@@ -6,7 +6,7 @@
   "scripts": {
     "start": "live-server public",
     "dev": "tailwindcss -i src/styles.css -o public/styles.css --watch",
-    "build": "npx tailwindcss -i public/styles.css -o dist/dist.css --minify"
+    "build": "npx tailwindcss -o public/styles.css --minify"
   },
   "keywords": [],
   "author": "",

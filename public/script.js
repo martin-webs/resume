@@ -12,7 +12,7 @@ function createExclamationMark() {
   mark.innerText = "!";
   mark.style.color = "#f8a839";
   thankyou.appendChild(mark);
-  if (thankyou.childElementCount > 2) {
+  if (thankyou.childElementCount > 0) {
     thankyou.removeEventListener("mouseover", createExclamationMark);
 		
   }

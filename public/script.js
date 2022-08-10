@@ -11,6 +11,7 @@ function createExclamationMark() {
   mark = document.createElement("span");
   mark.innerText = "!";
   mark.style.color = "#f8a839";
+  mark.style.fontWeight = "bold";
   thankyou.appendChild(mark);
   if (thankyou.childElementCount > 0) {
     thankyou.removeEventListener("mouseover", createExclamationMark);

@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'Inter', sans-serif;
-	src: url('./fonts/Inter-Regular.woff') format('woff');
+	src: url('./font/Inter-Regular.woff') format('woff');
 }
 
 @tailwind base;

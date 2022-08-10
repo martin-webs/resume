@@ -651,6 +651,12 @@ video {
   display: none;
 }
 
+.h-min{
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -909,6 +915,10 @@ video {
   transform: rotate(205deg);
 }
 
+svg {
+  height: intrinsic;
+}
+
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1045,10 +1055,6 @@ video {
 @media (min-width: 1024px){
   .lg\:w-6{
     width: 1.5rem;
-  }
-
-  .lg\:w-8{
-    width: 2rem;
   }
 
   .lg\:px-10{

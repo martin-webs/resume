@@ -651,12 +651,6 @@ video {
   display: none;
 }
 
-.h-min{
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-}
-
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;

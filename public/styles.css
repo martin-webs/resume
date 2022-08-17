@@ -582,6 +582,90 @@ video {
   left: 6rem;
 }
 
+.top-4{
+  top: 1rem;
+}
+
+.left-4{
+  left: 1rem;
+}
+
+.-right-4{
+  right: -1rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
+.left-2{
+  left: 0.5rem;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.top-24{
+  top: 6rem;
+}
+
+.top-\[\]{
+  top: ;
+}
+
+.top-\[18rem\]{
+  top: 18rem;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-\[15rem\]{
+  top: 15rem;
+}
+
+.top-\[10rem\]{
+  top: 10rem;
+}
+
+.top-\[20rem\]{
+  top: 20rem;
+}
+
+.top-\[6rem\]{
+  top: 6rem;
+}
+
+.top-\[4rem\]{
+  top: 4rem;
+}
+
+.top-16{
+  top: 4rem;
+}
+
+.float-right{
+  float: right;
+}
+
+.m-auto{
+  margin: auto;
+}
+
 .mx-\[-8px\]{
   margin-left: -8px;
   margin-right: -8px;
@@ -651,6 +735,62 @@ video {
   display: none;
 }
 
+.h-\[\]{
+  height: ;
+}
+
+.h-\[30rem\]{
+  height: 30rem;
+}
+
+.h-\[25rem\]{
+  height: 25rem;
+}
+
+.h-\[15rem\]{
+  height: 15rem;
+}
+
+.h-\[20rem\]{
+  height: 20rem;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-12{
+  height: 3rem;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-\[24rem\]{
+  height: 24rem;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.h-4{
+  height: 1rem;
+}
+
+.h-2\/3{
+  height: 66.666667%;
+}
+
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -669,12 +809,72 @@ video {
   width: 1rem;
 }
 
+.w-screen{
+  width: 100vw;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[90\]{
+  width: 90;
+}
+
+.w-\[90\%\]{
+  width: 90%;
+}
+
+.w-\[1\]{
+  width: 1;
+}
+
+.w-\[14rem\]{
+  width: 14rem;
+}
+
+.w-\[15rem\]{
+  width: 15rem;
+}
+
+.w-\[20rem\]{
+  width: 20rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-12{
+  width: 3rem;
+}
+
+.w-20{
+  width: 5rem;
+}
+
+.w-\[25rem\]{
+  width: 25rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.scroll-m-2{
+  scroll-margin: 0.5rem;
 }
 
 .list-inside{
@@ -717,6 +917,18 @@ video {
   align-self: flex-end;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -753,12 +965,34 @@ video {
   background-color: rgb(45 44 53 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-3{
   padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .px-2{
@@ -796,6 +1030,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-custom3{
@@ -936,6 +1174,18 @@ svg {
 }
 
 @media (min-width: 768px){
+  .md\:top-\[15rem\]{
+    top: 15rem;
+  }
+
+  .md\:top-\[16rem\]{
+    top: 16rem;
+  }
+
+  .md\:top-\[20rem\]{
+    top: 20rem;
+  }
+
   .md\:mx-24{
     margin-left: 6rem;
     margin-right: 6rem;
@@ -953,10 +1203,66 @@ svg {
     display: inline;
   }
 
+  .md\:h-\[\]{
+    height: ;
+  }
+
+  .md\:h-\[32rem\]{
+    height: 32rem;
+  }
+
+  .md\:h-\[35rem\]{
+    height: 35rem;
+  }
+
+  .md\:h-\[3rem\]{
+    height: 3rem;
+  }
+
+  .md\:h-\[30rem\]{
+    height: 30rem;
+  }
+
+  .md\:h-\[33em\]{
+    height: 33em;
+  }
+
+  .md\:h-\[33rem\]{
+    height: 33rem;
+  }
+
+  .md\:h-\[40rem\]{
+    height: 40rem;
+  }
+
+  .md\:h-\[45rem\]{
+    height: 45rem;
+  }
+
+  .md\:h-\[43rem\]{
+    height: 43rem;
+  }
+
+  .md\:h-\[55rem\]{
+    height: 55rem;
+  }
+
   .md\:w-fit{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:w-40{
+    width: 10rem;
+  }
+
+  .md\:w-\[40rem\]{
+    width: 40rem;
+  }
+
+  .md\:w-\[35rem\]{
+    width: 35rem;
   }
 
   .md\:flex-row{
@@ -985,6 +1291,10 @@ svg {
 
   .md\:gap-12{
     gap: 3rem;
+  }
+
+  .md\:overflow-y-scroll{
+    overflow-y: scroll;
   }
 
   .md\:bg-\[\#1a1a18\]{

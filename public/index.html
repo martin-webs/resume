@@ -48,11 +48,17 @@
 					<h2 class="text-xl font-custom1 font-bold tracking-[0.2rem] mb-2">
 						SKILLSET
 					</h2>
-					<ul class="mt-4 flex flex-wrap w-fit lg:text-[1rem]">
+					<ul id="skillset" class="mt-4 flex flex-wrap w-fit lg:text-[1rem] relative">
 						<li class="mr-4 mb-4 hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2 ">Html</span>
 							<i class="fa-brands fa-html5 hidden md:inline"></i>
 						</li>
+						<!-- <div
+							class="absolute top-24 left-0 right-0 m-auto w-96 h-[25rem] overflow-y-scroll  bg-[#1e1e1e] p-6  md:w-[35rem] md:top-[20rem]">
+							<i id="close-button" class="fa-solid fa-circle-xmark text-xl text-white float-right"></i>
+							<img src="./img/0.jpg" alt="html-code">
+						</div> -->
+						<!-- <div class="absolute top-20 left-0 right-0 m-auto w-96 h-4 bg-white"></div> -->
 						<li class="mr-4 mb-4 hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">Css</span>
 							<i class="fa-brands fa-css3-alt hidden md:inline"></i>
@@ -64,10 +70,6 @@
 						<li class="mr-4 mb-4 hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">React</span>
 							<i class="fa-brands fa-react hidden md:inline"></i>
-						</li>
-						<li class="mr-4 mb-4 hover:scale-125 duration-700">
-							<span class="border rounded-lg py-1 px-2">NodeJS</span>
-							<i class="fa-brands fa-node-js hidden md:inline"></i>
 						</li>
 						<li class="mr-4 mb-4 hover:scale-125 duration-700">
 							<span class="border rounded-lg py-1 px-2">Figma</span>
@@ -161,7 +163,7 @@
 					<h2 class="text-xl font-custom1 font-bold tracking-[0.2rem] mb-2 lg:text-[1.3rem]">
 						PROJECTS
 					</h2>
-					<ul class="flex flex-col gap-2 mt-2">
+					<ul id="projects" class="flex flex-col gap-2 mt-2">
 						<li>
 							<a href="https://sleepy-williams-042e66.netlify.app/">
 								<span class="mr-1 block font-custom1 font-bold inline">St Andrew's Stained-Glass Windows</span>
@@ -179,7 +181,7 @@
 								first screen requires information to create a developer’s card, the second displays the info with simple
 								graphic elements.</span>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="https://remindly.onrender.com/">
 								<span class="mr-1 font-bold font-custom1 inline">Remindly</span>
 								<i class="fa-solid fa-up-right-from-square"></i>
@@ -188,19 +190,21 @@
 								Node JS, Express, Passport JS. Authentication with email and Github accout (sign in with
 								"jimmy123@gmail.com" and "jimmy123!" to test it), create, edit and delete reminders; database
 								implementation is coming up.</span>
-						</li>
+						</li> -->
 						<li>
 							<a href="https://resume-dsign-7.vercel.app/">
 								<span class="mr-1 font-bold font-custom1 inline">Resume</span>
 								<i class="fa-solid fa-up-right-from-square"></i>
 							</a>
-							<span class="hidden md:block">A small project emulating a pdf displaying a classic resume, made with TailwindCss and a sprinkle of JS and CSS; the main bulk is in the HTML file.</span>
+							<span class="hidden md:block">A small project emulating a pdf displaying a classic resume, made with
+								TailwindCss and a sprinkle of JS and CSS; the main bulk is in the HTML file.</span>
 						</li>
 					</ul>
 				</div>
 			</section>
 		</main>
-		<footer class="relative bg-[#1e1e1e] mt-8 mx-[-8px] p-4 font-custom1 font-thin text-xs text-white md:px-[3rem] md:bg-[#44433d] lg:pb-8 lg:px-10 xl:px-16">
+		<footer
+			class="relative bg-[#1e1e1e] mt-8 mx-[-8px] p-8 font-custom1 font-thin text-xs text-white md:px-[3rem] md:bg-[#44433d] lg:pb-8 lg:px-10 xl:px-16">
 			<div class="flex justify-between px-2 grayscale hover:grayscale-0">
 				<svg id="brush-logo" class="w-4 lg:w-6 cursor-pointer hover:scale-150 duration-700"
 					xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 32 32">
@@ -225,7 +229,8 @@
 					<path fill="#f8a839"
 						d="M1.715,1.038a14.036,14.036,0,0,0,.439,6.893,8.429,8.429,0,0,0,3.066,4.2c1.73,1.238,5.129,2.8,6.593.343.9-1.508.51-3.8-.352-5.239A5.337,5.337,0,0,0,7.451,4.688,25.2,25.2,0,0,1,4.534,4.5C3.058,4.165,1.382,2.7,1.715,1.038Z" />
 				</svg>
-				<div id="thankyou" class="text-center self-end hover:scale-150 duration-700 md:text-base">Thank you for your visit </div>
+				<div id="thankyou" class="text-center self-end hover:scale-150 duration-700 md:text-base">Thank you for your
+					visit </div>
 				<a href="https://github.com/martin-webs/resume">
 					<svg id="brush-logo" class="w-4 lg:w-6 text-blue-500 hover:scale-150 duration-700"
 						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -237,7 +242,7 @@
 			</div>
 			<div id="tooltip1"
 				class="absolute top-[-10px] left-24 bg-[#2d2c35] text-base text-[#fde047] py-1 px-3 opacity-0 rounded">
-				...used Tailwind to make this site, interesting!</div>
+				...this is the first time with TailwindCss</div>
 		</footer>
 	</div>
 	<script type="text/javascript" src="./script.js"></script>

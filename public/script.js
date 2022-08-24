@@ -2,6 +2,7 @@ const tooltip1 = document.getElementById("tooltip1");
 const brushLogo = document.getElementById("brush-logo");
 const thankyou = document.getElementById("thankyou");
 const skillsetLi = document.querySelectorAll("#skillset li");
+const skillShow = document.getElementById("skill-show");
 let mark = "";
 
 /* Show tooltip in the footer */
@@ -26,16 +27,23 @@ thankyou.addEventListener("mouseover", createExclamationMark);
 skillsetLi.forEach((skill, index) =>
   skill.addEventListener("click", () => {
     const div = document.createElement("div");
-    document.body.appendChild(div);
+    skillShow.appendChild(div);
     div.setAttribute(
       "class",
-      "absolute top-24 inset-x-1 h-96 overflow-y-scroll p-6 bg-[#1e1e1e] border-4 border-yellow-300 rounded-lg delay-500 md:top-44 md:inset-x-36 md:border-[1rem] md:border-yellow-300 lg:h-2/4"
+      "absolute inset-x-1 h-96 overflow-y-scroll overflow-x-scroll p-6 bg-[#1e1e1e] border-4 border-yellow-300 rounded-lg md:border-[1rem] md:border-yellow-300"
     );
-    div.innerHTML = `<i id="close-button" class="fa-solid fa-circle-xmark sticky right-4 top-0 text-xl text-yellow-300 md:top-0"></i><img src="./img/${index}.jpg" alt="${skill.innerText} example" />`;
+    div.innerHTML = `<img src="./img/${index}.jpg" class="max-w-none" alt="${skill.innerText} example" />`;
+    skillShow.innerHTML +=`<i id="close-button" class="absolute -inset-7 fa-solid fa-circle-xmark text-4xl text-yellow-300 fixed  text-xl"></i>`;
     /* Remove pop up */
-    const closeBtn = div.children[0];
+    const closeBtn = skillShow.childNodes[1];
+    const skillShowChildren = skillShow.children;
     closeBtn.addEventListener("click", () => {
-      div.remove();
+      console.log(skillShowChildren);
+      // skillShow.removeChild(skillShowChildren);
+      while(skillShow.firstChild) {
+        console.log('child');
+        skillShow.removeChild(skillShow.firstChild);
+      }
     });
   })
 );

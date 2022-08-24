@@ -604,6 +604,11 @@ video {
   top: 0px;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mx-\[-8px\]{
   margin-left: -8px;
   margin-right: -8px;

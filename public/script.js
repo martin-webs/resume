@@ -30,12 +30,13 @@ skillsetLi.forEach((skill, index) =>
     skillShow.appendChild(div);
     div.setAttribute(
       "class",
-      "absolute inset-x-1 h-96 overflow-y-scroll overflow-x-scroll p-6 bg-[#1e1e1e] border-4 border-yellow-300 rounded-lg md:border-[1rem] md:border-yellow-300"
+      "absolute inset-x-1 h-96 overflow-y-scroll p-6 bg-[#1e1e1e] border-4 border-yellow-300 rounded-lg md:border-[1rem] md:border-yellow-300"
     );
-    div.innerHTML = `<img src="./img/${index}.jpg" class="max-w-none" alt="${skill.innerText} example" />`;
+    div.innerHTML = `<img src="./img/${index}.jpg" class="max-w-screen" alt="${skill.innerText} example" />`;
     skillShow.innerHTML +=`<i id="close-button" class="absolute -inset-7 fa-solid fa-circle-xmark text-4xl text-yellow-300 fixed  text-xl"></i>`;
     /* Remove pop up */
-    const closeBtn = skillShow.childNodes[1];
+    // const closeBtn = skillShow.childNodes[1];
+    const closeBtn = document.getElementById("close-button");
     const skillShowChildren = skillShow.children;
     closeBtn.addEventListener("click", () => {
       console.log(skillShowChildren);

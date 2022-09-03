@@ -672,28 +672,8 @@ video {
   display: none;
 }
 
-.h-\[\]{
-  height: ;
-}
-
-.h-\[25rem\]{
-  height: 25rem;
-}
-
-.h-\[26rem\]{
-  height: 26rem;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
 .h-96{
   height: 24rem;
-}
-
-.h-2{
-  height: 0.5rem;
 }
 
 .w-fit{
@@ -716,6 +696,10 @@ video {
 
 .max-w-none{
   max-width: none;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .transform{

@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom1: ["Source Sans Pro", "sans"],
-        custom2: ["Courgette", "sans"],
-        custom3: ["Inter", "sans"],
+        custom1: ["Source Sans Pro", "sans-serif"],
+        custom2: ["Courgette", "serif"],
+        custom3: ["Inter", "sans-serif"],
         custom4: ["Secular One", "sans-serif"],
       },
       boxShadow: {

@@ -1,27 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Courgette&family=Inter:wght@300;400&family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Courgette&family=Inter:wght@300;400&family=Source+Sans+Pro:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .show {
-	opacity: 1;
-	transform: translateX(-30px); 
-	transition: all 1s ease-in-out;
+  opacity: 1;
+  transform: translateX(-30px);
+  transition: all 1s ease-in-out;
 }
 
 #tooltip1::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: -1%;
-	margin-top: -1.5px;
-	border-width: 11px;
-	border-style: solid;
-	border-color: transparent #2d2c35 transparent transparent;
-	transform: rotate(205deg);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  margin-top: -1.5px;
+  border-width: 11px;
+  border-style: solid;
+  border-color: transparent #2d2c35 transparent transparent;
+  transform: rotate(205deg);
 }
 
 svg {
-	height: intrinsic;
+  height: intrinsic;
+}
+
+.web-icon {
+  background: url("../img/web.svg") no-repeat center center;
+  width: 1.5rem;
+  height: 1.5rem;
 }

@@ -4,7 +4,16 @@ const thankyou = document.getElementById("thankyou");
 const skillsetLi = document.querySelectorAll("#skillset li");
 const skillShow = document.getElementById("skill-show");
 const closeBtn = document.getElementById("close-button");
+// const skillSection = document.getElementById("skill-section");
+const skillMessage = document.querySelector("#skill-section .show-message");
 let mark = "";
+
+document.body.onload = function () {
+  setTimeout(function () {
+    skillMessage.setAttribute("style", "opacity: 1");
+    setTimeout(() => skillMessage.remove(), 5000);
+  }, 3000);
+};
 
 /* Show tooltip in the footer */
 brushLogo.addEventListener("click", () => {
